@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid template</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+        }
+        nav, .container, .content, footer, .left,.right{
+            border: 1px solid;
+            margin: 5px;
+        }
+        nav{
+            height: 80px;
+        }
+        .container{
+            background-color: grey;
+            display: grid;
+            grid-template-columns: 200px auto 200px;
+        }
+
+        .left, .content, .right{
+            height: 75vh;
+            background-color: aquamarine;
+        }
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>NAVBAR</h1>
+    </nav>
+
+    <div class="container">
+        <aside class="left">
+            <h1>sidebar-left</h1>
+        </aside>
+
+        <main class="content">
+            <h1>main content</h1>
+        </main>
+
+        <aside class="right">
+            <h1>sidebar-right</h1>
+        </aside>
+    </div>
+
+    <footer>
+        <h1>Footer</h1>
+    </footer>
+</body>
+</html>

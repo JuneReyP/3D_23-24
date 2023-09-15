@@ -1,0 +1,22 @@
+a{
+    color: #eee6e9;
+    font-size: 50px;
+    text-decoration: none;
+}
+h1{
+    color: yellow;
+    font-family: monospace;
+}
+.myLink{
+    color: blue;
+    background-color: white;
+    padding: 10px;
+    margin: 15px;
+}
+
+.sample{
+    border: 5px solid;
+}
+/* #myId{
+
+} */

@@ -5,38 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        div{
-            margin: 5px;
-            border: 1px solid;
+        .image{
+            width: 85px;
+            height: 85px;
+            margin: 10px;
         }
         .container{
             display: grid;
-            grid-template-rows: 100px 100px 100px 100px 100px;
-            grid-template-columns: 100px 100px 100px 100px 100px;
+            grid-template-rows: repeat(5, 20vh);
+            grid-template-columns: repeat(5, 20vw);
+            gap: 5px;
         }
+        /* navbar */
         .div1{
             background-color: aquamarine;
-            grid-column: 2/4;
-            grid-row: 2/3;
-            border-radius: 50%;
+            grid-column: 1/6;
+            grid-row: 1/2;
+            
+            text-align: end;
         }
+        /* sidebar - left */
         .div2{
             background-color: burlywood;
-            grid-column: 3/4;
-            grid-row: 2/3;            
-            z-index: 1;
+            grid-column: 1/2;
+            grid-row: 2/5;    
         }
+        /* main content */
         .div3{
             background-color: cornflowerblue;
+            grid-column: 2/5;
+            grid-row: 2/5;
+        }
+        /* sidebar - right */
+        .div4{
+            background-color: rgb(219, 111, 113);
+            grid-column: 5/6;
+            grid-row: 2/5;
+        }
+        /* footer */
+        .div5{
+            background-color: rgb(112, 42, 95);
             grid-column: 1/6;
+            grid-row: 5/6;
+        }
+        p{
+            margin: 25px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="div1">1st</div>
-        <div class="div2">2nd</div>
-        <div class="div3">3rd</div>
+        <div class="div1">
+            
+            <img src="image.jpg" class="image" alt="sample">
+        </div>
+        <div class="div2">2nd
+            <img src="image.jpg" class="image" alt="sample">
+        </div>
+        <div class="div3">3rd
+            <img src="image.jpg" class="image" alt="sample">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, dolores magnam asperiores eum ut eos voluptatem iure, praesentium tenetur officiis voluptate vel sapiente facilis laudantium perspiciatis odit. Natus, explicabo doloribus!</p>
+        </div>
+        <div class="div4">4th<img src="image.jpg" class="image" alt="sample"></div>
+        <div class="div5">5th</div>
     </div>
 </body>
 </html>
